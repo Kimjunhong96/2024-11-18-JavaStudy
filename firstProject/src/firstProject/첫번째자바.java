@@ -68,7 +68,8 @@ public class 첫번째자바 {
 		// TODO Auto-generated method stub
        System.out.println("Hello Java");
        System.out.println("Hello JunHong");
-       {
+       
 	}
+	
 
 }
