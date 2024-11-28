@@ -32,7 +32,7 @@
  *        *** 객체지향 프로그램 : 변수 / 메소드
  *        -----------------------------
  *        String에서 사용하는 메소드
- *        1) length() : 문자의 갯수 (한글/알파벳) => 동일
+ *        ***1) ***length() : 문자의 갯수 (한글/알파벳) => 동일
  *                     *알파벳 => 저장시 1byte : ASC/Unicode
  *                     *한글 => 저장시 2byte : Unicode
  *                      => "UTF-8"
@@ -117,8 +117,8 @@
  *                  int len = lastIndexOf('a');  => 9
  *               
  *             -----------------------------------------
- *          5) 검색 관련
- *             contains() : 포함 문자 => %검색어% 
+ *          ***5) 검색 관련
+ *            *** contains() : 포함 문자 => %검색어% 
  *             => 일반 검색기
  *             -----------------------------------
  *             원형)
@@ -151,6 +151,74 @@
  *                boolean endsWith(String s)
  *                                 -------- 문자열 끝
  *            ------------------------------------------
+ *            
+ *          7) 변환 
+ *             replace() => 문자/문자열 변환
+ *            -----------------------------------------
+ *            원형)
+ *                String replace(char old,char new)
+ *                String replace(String old , String new) 
+ *            -----------------------------------------
+ *                String msg = "Hello Java";
+ *                String s=msg.replace('a' , 'b')
+ *                s="Hello Jbvb"
+ *                String s=msg.replace("Java" , "Oracle");
+ *                s = "Hello Oracle"
+ *                
+ *              replaceAll() => 전체 변경
+ *            ------------------------------------------
+ *             String replaceAll(String regex,String s)
+ *                               ------------
+ *                               패턴을 적용해서 변경
+ *                               --------
+ *                               정규식
+ *               => [0-9{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}
+ *                  ip => 모든
+ *                  
+ *           ***8)
+ *             ***trim()
+ *                  
+ *            ------------------------------------------
+ *          ***11) substring() : 문자열 자르기
+ *              ---------------------------------------
+ *              원형)
+ *                  String substring(int begin)
+ *                     begin부터 마지막 문자열까지 자르기
+ *                     예)
+ *                        String s="aaa.java";
+ *                        String ext=s.substring(4); => java
+ *                             => indexOf,lastIndexOf
+ *                  String substring(int begin,int end) 
+ *                      String s ="Hello Java";
+ *                      => 중간에 자르는 경우 (어디서 어디까지)
+ *                      => s.substring(2,5)
+ *                                       -- 미포함
+ *                                       => end-1
+ *                      전화번호 : 010-1111-1111
+ *                               000-000
+ *             -----------------------------------------
+ *                  
+ *          ***12) split() : 단어별 구분
+ *              ------------------------------------------
+ *              원형)
+ *                  String[] split(String regex)
+ *                  == 1|제목|출연|상영일...
+ *              -----------------------------------------    
+ *          13) format() : 변환
+ *              ----------------------------------------
+ *              원형)
+ *                  String format(String s,Object bvj...)
+ *                  // 가변 매개변수 => 원하는 갯수만큼 사용이 가능
+ *                  format("%d %d %d" , 10,20,30)
+ *                  => %.2f
+ *              -----------------------------------------
+ *          ***14) equals() : == (저장된 문자열을 비교)
+ *              ------------------------------------------
+ *              원형)
+ *                  
+ *                  boolean equals(String s)
+ *                  => 로그인처리,아이디차지
+ *              ------------------------------------------
  */
 import java.util.Scanner;
 public class 문자열_1 {
@@ -177,16 +245,21 @@ public class 문자열_1 {
 //		{
 //			System.out.println("No");
 //		}
-		Stirng[] data= {
-				"자바와 JSP",
-				"혼자 배우는 자바",
-				"스프링과 자바",
-				"자바의 정석",
-				"자바의 기초",
-				"스프링 부트와 자바"
-		};
-		Scanner scan=new Scanner(System.in);
-		System.out.println("검색어 입력");
+//		String[] data= {
+//				"자바와 JSP",
+//				"혼자 배우는 자바",
+//				"스프링과 자바",
+//				"자바의 정석",
+//				"자바의 기초",
+//				"스프링 부트와 자바"
+//		};
+//		Scanner scan=new Scanner(System.in);
+//		System.out.println("검색어 입력");
+		int a =10;
+		int b = 20;
+		System.out.println(a+b); //30
+		System.out.println(String.valueOf(a+String.valueOf(b)));
+		//1020
 
 	}
 
