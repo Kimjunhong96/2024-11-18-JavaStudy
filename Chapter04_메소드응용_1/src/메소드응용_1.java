@@ -102,12 +102,12 @@ public class 메소드응용_1 {
 				System.out.print("●");
 			}
 			System.out.println();
-			System.out.println("B:");
+			System.out.print("B:");
 			for(int i=0; i<b; i++)
 			{
 				System.out.print("○");
 			}
-			System.out.println("Input Number:"+input+",Result:"+s+"S-"+b+"B");
+			System.out.println("\nInput Number:"+input+",Result:"+s+"S-"+b+"B");
 			//System.out.printf("input Number:%d,Result:%dS-%dB");
 			
 			// 중복여부 확인
