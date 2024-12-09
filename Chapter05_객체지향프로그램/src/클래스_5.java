@@ -20,8 +20,7 @@ public class 클래스_5 {
 		Student[] std = new Student[3];
 		// 초기화 
 		Scanner scan= new Scanner(System.in);
-		for(int i = 0; i<std.length; i++);
-		{
+		for(int i = 0; i<std.length; i++){
 			
 			std[i]=new Student(); // 학생이 가지고 있는 데이터 저장을위한 메모리 
 			//System.out.println(std[i]);
@@ -38,7 +37,7 @@ public class 클래스_5 {
 			
 			std[i].avg=std[i].total/3.0;
 		
-			
+			switch 
 			{
 				case 10 , 9: 
 					std[i].score='A';

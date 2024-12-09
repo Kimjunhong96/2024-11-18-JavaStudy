@@ -1,10 +1,10 @@
-class Recipe
-{
-	int rno;//구분자
-	String title;
-	String chef;
-	String poster;
-}
+//class Recipe
+//{
+//	int rno;//구분자
+//	String title;
+//	String chef;
+//	String poster;
+//}
 class RecipeSite
 {
 	static Recipe[] recipes = new Recipe[40];

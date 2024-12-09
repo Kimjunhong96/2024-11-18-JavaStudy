@@ -84,7 +84,7 @@ public class 클래스_2 {
 		//static => 객체명, 변수명
 		//--------------- >클래스명 , 변수명 
 		Card.width=300;
-		Card.height=35 // 클래스 변수
+		Card.height=35; // 클래스 변수
 		//System.out.println(c1);
 		// c1= number , type => 객체
 		/*
