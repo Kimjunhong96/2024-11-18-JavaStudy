@@ -36,26 +36,26 @@ public class 클래스_5 {
 			std[i].total=std[i].kor+std[i].eng+std[i].math;
 			
 			std[i].avg=std[i].total/3.0;
-		
-			switch 
-			{
-				case 10 , 9: 
-					std[i].score='A';
-				break;
-				case 8:
-					std[i].score='B';
-					break;
-				case 7:
-					std[i].score='C';
-					break;
-				case 6:
-					std[i].score='D';
-					break;
-					ca
+//		
+//			switch 
+//			{
+//				case 10 , 9: 
+//					std[i].score='A';
+//				break;
+//				case 8:
+//					std[i].score='B';
+//					break;
+//				case 7:
+//					std[i].score='C';
+//					break;
+//				case 6:
+//					std[i].score='D';
+//					break;
+//					ca
 			}
 			
 		}
 
 	}
 
-}
+
