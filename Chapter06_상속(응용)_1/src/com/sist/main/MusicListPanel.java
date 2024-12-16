@@ -39,6 +39,7 @@ implements ActionListener
 		
 		b1.addActionListener(this);// 이벤트 등록
 		b2.addActionListener(this);
+		table.setRowHeight(40);
 	}
 	public void musicPrint(int type) {
 		for(int i=model.getRowCount()-1; i>=0; i--) {
