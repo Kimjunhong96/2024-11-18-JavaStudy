@@ -40,6 +40,9 @@ public class 네트워크_2 extends JFrame implements ActionListener{
 		setSize(640, 480);
 		setVisible(true);
 		
+		b1.addActionListener(this);
+		b2.addActionListener(this);
+		
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -73,6 +76,7 @@ public class 네트워크_2 extends JFrame implements ActionListener{
 	 *       }
 	 *    }
 	 */
+	// => 
 	class BarThread extends Thread {
 		// 프로그래바를 한개만 작동
 		int index; 
